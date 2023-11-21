@@ -19,8 +19,8 @@ jobs:
         run: |
           echo "device=cas" >> $GITHUB_ENV
           # 获取信息
-          echo "cas_url=$(curl https://miui.511i.cn/1987836456/get_miui_test.php?codename=cas)" >> $GITHUB_ENV
-          echo "psyche_url=$(curl https://miui.511i.cn/1987836456/get_miui_test.php?codename=psyche)" >> $GITHUB_ENV
+          echo "cas_url=$(curl https://miui.511i.cn/1987836456/get_miui_stable.php?codename=cas)" >> $GITHUB_ENV
+          echo "psyche_url=$(curl https://miui.511i.cn/1987836456/get_miui_stable.php?codename=SHENNONG)" >> $GITHUB_ENV
           echo "currentVer=$(cat "$GITHUB_WORKSPACE"/cas_current_version)" >> $GITHUB_ENV
           echo "psycheVer=$(echo $psyche_url | cut -d"/" -f4)" >> $GITHUB_ENV
           echo "date=$(echo $psyche_url | cut -d"/" -f4)" >> $GITHUB_ENV
